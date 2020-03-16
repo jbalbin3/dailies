@@ -58,4 +58,21 @@ var tree2str = function(t) {  // ['c','d','e','f']
   }
 
   return output;
+
+  // if input is not an array but a tree note
+  // var tree2str = function(t) {
+  //   if (!t) return "";
+
+  //   let result = t.val.toString();
+
+  //   if (t.left || t.right) {
+  //       result += "(" + tree2str(t.left) + ")";
+  //   }
+
+  //   if (t.right) {
+  //       result += "(" + tree2str(t.right) + ")"
+  //   }
+
+  //   return result;
+  // };
 };
