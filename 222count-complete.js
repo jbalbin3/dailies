@@ -29,14 +29,14 @@ Output: 6
 var countNodes = function(root) {
   var count = 0;
   if(!root) { return count; }
-  if(root.val) {
+  if(root.val !== null) {
     count += 1;
   }
-  if(root.left) {
+  if(root.left !== null) {
     count += countNodes(root.left);
   }
-  if(root.right) {
-    count += countNodes(root.left);
+  if(root.right !== null) {
+    count += countNodes(root.right);
   }
   return count;
 };
